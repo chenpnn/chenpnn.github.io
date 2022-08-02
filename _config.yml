@@ -62,8 +62,8 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID:                             #生成的clientID
   clientSecret:     #生成的clientSecret
-  repo: name.github.io    #仓库名称
-  owner:     #github用户名
+  repo: chenpnn.github.io    #仓库名称
+  owner: chenpnn    #github用户名
   admin: 
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
@@ -83,7 +83,7 @@ ga_domain:                # 默认的是 auto, 这里我是自定义了的域名
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
 
