@@ -4,7 +4,7 @@ title:      This is title
 subtitle:   This is subtitle
 date:       2022-08-02
 author:     chenpnn
-header-img: img/post-bg-temp.jpeg
+header-img: img/post-bg-temp.jpg
 catalog: true
 tags:
     - Tylor
