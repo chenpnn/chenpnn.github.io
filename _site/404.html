@@ -16,11 +16,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="写一句你想写的话">
-    <meta name="keywords"  content="我的博客">
-    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <meta name="keywords"  content="">
+    <meta name="theme-color" content="">
     
-    <title>我的博客 | My Blog</title>
+    <title></title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -82,7 +82,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">My Blog</a>
+            <a class="navbar-brand" href="/">Your awesome title</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -94,11 +94,15 @@
                     </li>
                     
                     <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    
+                    <li>
                         <a href="/about/">About</a>
                     </li>
                     
                     <li>
-                        <a href="/tags/">Tags</a>
+                        <a href="/tags.html">Tags</a>
                     </li>
                     
                 </ul>
@@ -162,23 +166,26 @@
 </script>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/404-bg.jpg')">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="site-heading" id="tag-heading">
-					<h1>404</h1>
-					<span class="subheading">你来到了没有知识的荒原 🙊</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
 
-<script>
-	document.body.classList.add('page-fullscreen');
-</script>
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
 
 
     <!-- Footer -->
@@ -190,44 +197,26 @@
                     
                     <!-- add jianshu add target = "_blank" to <a> by BY -->
                     
-                            <li>
-                                <a target="_blank" href="https://www.jianshu.com/u/暂无">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">简</i>
-                                    </span>
-                                </a>
-                            </li>
                     
+                    <li>
+                        <a href="https://twitter.com/jekyllrb">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                     
 
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/暂无">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                    
                     
 
 
                     
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/暂无">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
                     
                     <li>
-                        <a target="_blank" href="https://github.com/暂无">
+                        <a target="_blank" href="https://github.com/jekyll">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -238,13 +227,13 @@
                     
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; My Blog 2019
+                    Copyright &copy; Your awesome title 2022
                     <br>
-                    Theme on <a href="https://github.com/name/name.github.io.git">GitHub</a> |
+                    Theme on <a href="">GitHub</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=暂无&repo=暂无.github.io&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=jekyll&repo=jekyll.github.io&type=star&count=true" >
                     </iframe>
                 </p>
             </div>
@@ -262,16 +251,6 @@
 <script src="/js/hux-blog.min.js "></script>
 
 <!-- Service Worker -->
-
-<script type="text/javascript">
-    if(navigator.serviceWorker){
-        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
-        navigator.serviceWorker
-            .register('/sw.js')
-            .then((registration) => {console.log('Service Worker Registered. ', registration)})
-            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
-    }
-</script>
 
 
 
