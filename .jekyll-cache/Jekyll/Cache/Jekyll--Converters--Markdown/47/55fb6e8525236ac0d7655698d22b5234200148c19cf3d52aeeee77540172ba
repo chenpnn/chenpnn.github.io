@@ -1,0 +1,80 @@
+I"�<h1 id="install-tensorflow-gpu-by-anaconda-conda-install-tensorflow-gpu">Install TensorFlow-GPU by Anaconda (conda install tensorflow-gpu)</h1>
+
+<h2 id="it-might-be-the-simplest-way-to-install-tensorflow-or-tensorflow-gpu-by-conda-install-in-the-conda-environment">It might be the simplest way to install Tensorflow or Tensorflow-GPU by conda install in the conda environment</h2>
+
+<p>Nowadays, there are many tutorials that instruct how to install tensorflow or tensorflow-gpu. However, some people may feel it too complex just like me, because in those ways, you should download and install <a href="https://www.nvidia.com/Download/index.aspx?lang=en-us">NVIDIA drivers</a>, and then download and install <a href="https://developer.nvidia.com/cuda-downloads">CUDA</a> (users need to pay attention to the version), afterwards you may sign an agreement and download cuDNN in <a href="https://developer.nvidia.com/cudnn">NVIDIA Developer</a>. Next, install python, and pip install tensorflow-gpu and so on. It’s not esay for developer to do these, let alone it might causes some other error such as <strong>version not match</strong>, or <strong>conflict between other python libraries</strong> and so on. Moreover, if you want to <a href="https://www.tensorflow.org/install/gpu">install tensorflow by compilation</a>, it may take much more time.</p>
+
+<p>Thus I strongly reconmend you not to do this, there’s a much easier way to install this. Please read the following article.</p>
+
+<hr />
+
+<h2 id="install-anaconda">Install Anaconda</h2>
+<blockquote>
+  <p><a href="https://www.anaconda.com/">Anaconda</a> is a free and open-source distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment.</p>
+</blockquote>
+
+<p><strong>You can download anaconda <a href="https://www.anaconda.com/distribution/#download-section">here</a>.</strong></p>
+
+<p>One of the advantage of anaconda is that it can create <strong>isolated environment</strong> in your device, and you can configure any libraries and toolkits in the ‘env’ without affect other environment. Once you are nor satisfied of your configuration, you can simplily delete the environment.</p>
+
+<p>Note that in you are in <strong>China</strong>, download anaconda might take a long time due to some resons that cannot say. Instead, you can download it from <a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/"><strong>Tsinghua mirror</strong></a>, and install it <strong>manually</strong>.</p>
+
+<p>After downloading this successfully, try to run the installation file.
+For example, if you use ubuntu, you can cd to the path of the sh file and run the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./Anaconda3-5.3.1-Linux-x86_64.sh
+</code></pre></div></div>
+<p><strong><em>Attention that you should change the command above to your own installation file name.</em></strong></p>
+
+<p>Then you will successfully install Anaconda!</p>
+
+<h2 id="create-new-environment-by-conda">Create new environment by conda</h2>
+
+<p>If you are unwilling to create conda environment (maybe because of lazy), you can skip this section. However, I strongly reconmend you to create this <strong>for the convience in the future</strong>.</p>
+
+<p>Run the command below:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">-n</span> tf
+</code></pre></div></div>
+<p><img src="/img/20190328post.jpg" alt="picture1" /></p>
+
+<p>‘tf’ is the name of your new conda environment, you can try other names as your own interest.</p>
+
+<p>For other management you conda env, you can read <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=environment">this</a>.</p>
+
+<h2 id="install-tensorflow">Install Tensorflow</h2>
+
+<p>First, you need to change to the env you have just built by conda:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>activete tf
+</code></pre></div></div>
+<p><img src="/img/20190328post2.jpg" alt="picture2" /></p>
+
+<p>For Chinese users, before starting the installation, you may change the source of conda as the same reason before. For more details, read the webcite of <a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/">Tsinghua Mirror</a>.
+Chinese users should type in this:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span>
+</code></pre></div></div>
+
+<p>Afterwards, type in the command to install TensorFlow you need:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>tensorflow-gpu
+</code></pre></div></div>
+<p><img src="/img/20190328post3.jpg" alt="picture3" /></p>
+
+<p>If you want to install a specific version of tensorflow-gpu or cpu veison, you can change the command like this:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>tensorflow-gpu<span class="o">=</span>1.10.0  <span class="c">#if you want to install 1.10.0 version</span>
+conda <span class="nb">install </span>tensorflow  <span class="c">#if you want to install cpu version</span>
+</code></pre></div></div>
+<p>After anaconda solve the environment, you just need to type in ‘y’ to confirm the installation.</p>
+
+<h2 id="anaconda-will-automatically-install-other-libs-and-toolkits-needed-by-tensorfloweg-cuda-and-cudnn-so-you-have-no-need-to-worry-about-this">Anaconda will <strong>automatically</strong> install other libs and toolkits needed by tensorflow(e.g. CUDA, and cuDNN), so you have no need to worry about this.</h2>
+
+<p>Type in <code class="language-plaintext highlighter-rouge">python</code> to enter the python environment.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">tf</span><span class="p">.</span><span class="n">__version__</span>
+</code></pre></div></div>
+<p>When you see the version of tensorflow, such as 1.10.0, you have successfully install it.</p>
+
+<p>That’s all, Thank you.</p>
+
+<p>If you encounter any problems, you can open an issue in the <strong>Comment area</strong>.</p>
+:ET
