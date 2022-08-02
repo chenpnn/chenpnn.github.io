@@ -2,7 +2,7 @@
 title: MODA
 SEOTitle: MODA
 header-img: img/home-bg-geom.jpg
-email: 暂无
+email: 
 description: "写一句你想写的话"
 keyword: "我的博客"
 url: "http://chenpnn.github.io"          # your host, for absolute URL
@@ -12,7 +12,7 @@ github_repo: "https://github.com/chenpnn/chenpnn.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "云卷云舒 人卷人累"
-sidebar-avatar: /img/avatar_binggan.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar_m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
