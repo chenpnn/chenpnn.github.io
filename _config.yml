@@ -11,7 +11,7 @@ github_repo: "https://github.com/chenpnn/chenpnn.github.io.git" # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: 
+sidebar-about-description: 身材瘦长脸色枯槁，披著一件青布长衫，洗的青中泛白，形象甚是落魄。
 sidebar-avatar: /img/avatar_m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
