@@ -28,7 +28,7 @@ jobs:
       - name: Clone repo from your github.io page and commit newly generated sentiment html file
         run: | #change all the "damianboh"s below to your username
           git clone https://github.com/chenpnn/chenpnn.github.io.git
-          cp index_ret.html chenpnn.github.io/_includes/index_ret.html
+          cp _includes/index_ret.html chenpnn.github.io/_includes/index_ret.html
           cd chenpnn.github.io/_includes
           git add index_ret.html
           git config --local user.email "action@github.com"
