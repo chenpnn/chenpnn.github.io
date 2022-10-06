@@ -41,4 +41,4 @@ jobs:
           github_token: ${{ secrets.TOKEN }}          
           repository: "chenpnn/chenpnn.github.io"
           branch: "main"          
-          directory: ./plotly
+          directory: ./chenpnn.github.io
