@@ -63,7 +63,7 @@ time_beijing = time_utc.astimezone(beijing).strftime("%Y-%m-%d %H:%M:%S")
 with open('_includes/index_ret.html', 'a') as f:
     f.truncate(0) # clear file if something is already written on it
     title = "<h1 align=\"center\">Financial Data in China</h1>"
-    description = "<h3 align=\"center\">Last update: " + time_beijing + " (UTC+8).</a></h3>"
+    description = "<h3 align=\"center\">Last update: " + time_beijing + " (UTC+8).</h3>"
     f.write(title + description)
     #f.write(fig.to_html())
     f.write(fig.to_html(full_html=False, include_plotlyjs='cdn')) # write the fig created above into the html file
