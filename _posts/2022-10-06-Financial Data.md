@@ -12,4 +12,4 @@ tags:
 
 {% include index_ret.html %}
 
-[Convex](https://github.com/chenpnn/chenpnn.github.io/blob/main/_includes/pdf/Convex%20and%20Stochastic%20Optimization%20(J.F.%20Bonnans)%20(z-lib.org).pdf)
+[Convex](http://nbviewer.jupyter.org/github.com/chenpnn/chenpnn.github.io/blob/main/_includes/pdf/Convex%20and%20Stochastic%20Optimization%20(J.F.%20Bonnans)%20(z-lib.org).pdf)
