@@ -13,3 +13,5 @@ tags:
 {% include index_ret.html %}
 
 [cvx](/pdf/Convex and Stochastic Optimization (J.F. Bonnans) (z-lib.org).pdf)
+
+webView.loadUrl("file:///android_asset/pdf.html?"+/pdf/Convex and Stochastic Optimization (J.F. Bonnans) (z-lib.org).pdf)
