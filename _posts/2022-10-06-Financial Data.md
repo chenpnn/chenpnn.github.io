@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      金融数据
-subtitle:   定时更新
+title:      Financial Data
+subtitle:   Update
 date:       2022-10-06
 author:     Moda
 header-img: img/post-bg-temp.jpg
