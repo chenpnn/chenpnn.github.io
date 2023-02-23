@@ -12,4 +12,4 @@ tags:
 
 {% include index_ret.html %}
 
-[pdf](./_includes/pdf/Convex and Stochastic Optimization (J.F. Bonnans) (z-lib.org).pdf)
+[cvx](/pdf/Convex and Stochastic Optimization (J.F. Bonnans) (z-lib.org).pdf)
