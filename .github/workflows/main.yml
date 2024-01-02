@@ -1,9 +1,11 @@
 name: Get Sentiment and update GitHub page
 
 on:
-#   [push]
+  create:
+  push:
   schedule:
-    - cron: "*/60 * * * *" # runs every 60 min
+    - cron: "0 0 * * *" # runs every 60 min
+  workflow_dispatch:
     
 jobs:
   refresh_page:
