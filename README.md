@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-See my personal website [here](http://xiaoxiangyeyu.site/).
+See my personal website [here](https://github.com/chenpnn/chenpnn.github.io).
 
 ## Contributors
 
